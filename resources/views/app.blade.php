@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Comics Archive</h1>
+            <h1 class="text-center text-danger mt-2 mb-5">Comics Archive</h1>
             <nav>
                 <a href="{{ route('comics.index') }}">Home</a>
                 <a href="{{ route('comics.create') }}">Add Comic</a>

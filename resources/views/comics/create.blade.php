@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <h1>Add New Comic</h1>
+    <h1 class="text-center my-5 text-danger">Add New Comic</h1>
     <form action="{{ route('comics.store') }}" method="POST">
         @csrf
         <label for="title">Title:</label>

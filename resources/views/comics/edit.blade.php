@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <h1>Edit Comic</h1>
+    <h1 class="text-center my-5 text-danger">Edit Comic</h1>
     <form action="{{ route('comics.update', $comic->id) }}" method="POST">
         @csrf
         @method('PUT')
