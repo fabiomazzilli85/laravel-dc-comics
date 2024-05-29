@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>{{ $comic->title }}</h1>
-    <p><strong>Description</strong>{{ $comic->description }}</p>
+    <p><strong>Description: </strong>{{ $comic->description }}</p>
     <p><strong>Author:</strong> {{ $comic->author }}</p>
     <p><strong>Publication Date:</strong> {{ $comic->publication_date }}</p>
     <p><strong>Genre:</strong> {{ $comic->genre }}</p>
