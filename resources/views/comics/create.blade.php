@@ -21,5 +21,4 @@
         <br>
         <button type="submit" class="btn btn-outline-success mt-3">Aggiungi</button>
     </form>
-    <p class="mt-3">Cliccando ''Add Comic'' il sistema restituisce una pagina di errore che fa riferimento a token, che abbiamo solo accennato a lezione, mi sa.</p>
 @endsection
