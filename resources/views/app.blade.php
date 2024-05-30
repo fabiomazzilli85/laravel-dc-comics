@@ -17,7 +17,7 @@
             @yield('content')
         </main>
         <footer>
-            <p>&copy; 2024 Comics Archive</p>
+            <p class="text-center">&copy; 2024 Comics Archive</p>
         </footer>
     </div>
 </body>
