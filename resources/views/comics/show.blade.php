@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<h1>{{ $comic->title }}</h1>
+<h1 class="text-success">{{ $comic->title }}</h1>
 <p><strong>Description: </strong>{{ $comic->description }}</p>
 <p><strong>Author:</strong> {{ $comic->author }}</p>
 <p><strong>Publication Date:</strong> {{ $comic->publication_date }}</p>
