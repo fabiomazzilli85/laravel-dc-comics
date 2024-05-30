@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Comics Archive</h1>
-    <a href="{{ route('comics.create') }}">Add New Comic</a>
+    <a class="d-flex my-4" href="{{ route('comics.create') }}">Add New Comic</a>
     <ul>
         @foreach ($comics as $comic)
             <li>
