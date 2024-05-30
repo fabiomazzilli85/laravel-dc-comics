@@ -65,6 +65,6 @@ public function destroy(comic $comic)
 
     $comic->delete();
 
-    return to_route('comic.index');
+    return to_route('comics.index');
 }
 }
