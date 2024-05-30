@@ -7,7 +7,7 @@
         @foreach ($comics as $comic)
             <li>
                 <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-3 align-items-center my-3">
                     <a href="{{ route('comics.edit', $comic->id) }}">Edit</a>
                     <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                         @method('DELETE')
