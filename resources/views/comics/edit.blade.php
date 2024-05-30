@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="text-center my-5 text-danger">Edit Comic</h1>
-    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
+    <form action="{{ route('comics.update', $comic) }}" method="POST">
         @csrf
         @method('PUT')
         <label for="title">Title:</label>
