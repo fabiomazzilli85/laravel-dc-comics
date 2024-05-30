@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <h1>Comics Archive</h1>
+    <h1 class="d-flex text-primary justify-content-center mt-5">Comics Archive</h1>
     <a class="d-flex my-4" href="{{ route('comics.create') }}">Add New Comic</a>
     <ul>
         @foreach ($comics as $comic)
