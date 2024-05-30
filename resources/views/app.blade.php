@@ -8,7 +8,7 @@
     <div class="container">
         <header>
             <h1 class="text-center text-danger mt-1 mb-5">Comics Archive</h1>
-            <nav class="text-center">
+            <nav class="d-flex justify-content-center gap-4 mb-3">
                 <a href="{{ route('comics.index') }}">Home</a>
                 <a href="{{ route('comics.create') }}">Add Comic</a>
             </nav>
