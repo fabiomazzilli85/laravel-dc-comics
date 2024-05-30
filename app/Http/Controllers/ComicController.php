@@ -43,4 +43,28 @@ class ComicController extends Controller
     {
         return view('comics.edit', compact('comic'));
     }
+
+    public function update(Request $request, Comic $comic)
+{
+    $validated_fields = $request->validate([
+        'title' => 'required|string|max:255',
+        'description' => 'nullable|string',
+        'author' => 'required|string|max:255',
+        'publication_date' => 'required|date',
+        'genre' => 'required|string|max:255',
+    ]);
+    
+    $comic->update($validated_fields);
+    $comic->save();
+
+    return redirect()->route('comics.show', $comic);
+}
+
+public function destroy(comic $comic)
+{
+
+    $comic->delete();
+
+    return to_route('comic.index');
+}
 }
